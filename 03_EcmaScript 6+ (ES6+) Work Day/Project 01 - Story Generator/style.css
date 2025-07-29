@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/*
+    TODO: style the input-container class with the following
+    display of flex
+    flex-direction set to column
+    max-width set to 400 pixels
+    margin of 0 on top, auto on left and right, and 2rem on bottom.
+
+    Note:
+    CSS rem stand for root em.  It is a unit of measurement used to define sizes relative to the font
+    size set on the root element of the document.
+*/
+
+/*
+    TODO: style the label tag with a margin-top of 1 rem and make the font bold.
+*/
+
+/*
+    TODO: style the input tags with a padding of 0.5 rem, a font size of 1 rem, a border radius of 5 pixels,
+    and a border 1 pixel thick, solid, and this color of gray #aaa
+*/
+
+/*
+    TODO: style the button with
+    a padding of 0.75 on top and bottom and 1.5 rem left and right.
+    a font size of 1.1 rem
+    a background color of this #4caf50
+    a text color of white
+    no border
+    border-radius of 10 pixels
+    cursor set to pointer
+    bottom margin of 1 rem.
+*/
+
+/*
+    TODO: style the buttons hover pseudo class to change the background-color to #45a049
+*/
+
+/*
+    TODO: style the storyOutput id to have
+    a font size of 1.25 rem
+    a top margin of 2 rem
+    a color of #333
+*/
