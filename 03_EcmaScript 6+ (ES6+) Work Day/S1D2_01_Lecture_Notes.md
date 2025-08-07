@@ -52,7 +52,7 @@ if (true) {
   let y = 20;
   console.log(y); // 20
 }
-console.log(y); // 10
+console.log(y); // 10_React Conditionals and Events
 
 // const is also block scoped and immutable
 const z = 30;
@@ -167,10 +167,10 @@ console.log(merged); // { a: 1, b: 2 }
 function sum(...nums) {
   return nums.reduce((total, n) => total + n, 0);
 }
-console.log(sum(1, 2, 3, 4)); // 10
+console.log(sum(1, 2, 3, 4)); // 10_React Conditionals and Events
 
 const [first, ...rest] = [10, 20, 30, 40];
-console.log(first); // 10
+console.log(first); // 10_React Conditionals and Events
 console.log(rest);  // [20, 30, 40]
 ```
 
