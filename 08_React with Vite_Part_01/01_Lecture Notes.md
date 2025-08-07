@@ -116,7 +116,7 @@ function Counter() {
 
 ## 🧪 Build Activity
 
-Replace the default `App.jsx` with the following:
+Replace the default `02_Example_App.jsx` with the following:
 
 ```jsx
 import { useState } from 'react';

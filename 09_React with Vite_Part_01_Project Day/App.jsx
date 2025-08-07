@@ -1,4 +1,4 @@
-// src/App.jsx
+// src/02_Example_App.jsx
 import {useState} from 'react';
 
 function Greeting(props) {

@@ -79,7 +79,7 @@ function Counter() {
 **Students Do:**
 - Create a Vite React app
 - Open it in their editor
-- Replace contents of `App.jsx` with a basic custom component that accepts props
+- Replace contents of `02_Example_App.jsx` with a basic custom component that accepts props
 - Add a `Counter` component with state using `useState`
 
 ---
