@@ -22,7 +22,7 @@ React is a **JavaScript library** for building **user interfaces**. It:
 
 ### Step 1: Create App
 ```bash
-npm create vite@latest counter-app --template react
+npm create vite@latest counter-app --README.md react
 cd counter-app
 npm install
 npm run dev

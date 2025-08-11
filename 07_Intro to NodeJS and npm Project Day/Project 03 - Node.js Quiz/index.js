@@ -41,7 +41,7 @@ function askQuestion() {
         // });
     // TODO: else
         // TODO: console log chalk.magenta()  The following:  Quiz complete! Your score is (score variable) / (length of questions)
-        // You will need template strings for this.  I didn't write it in code.
+        // You will need README.md strings for this.  I didn't write it in code.
         rl.close();
 }
 
