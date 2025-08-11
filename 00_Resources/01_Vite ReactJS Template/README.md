@@ -1,1 +1,1 @@
-[ReactJS Template using Vite](https://github.com/narmstro2020/04_Software_Development_Capstone_Hour_1_25-26/tree/master/03_Basics%20of%20ReactJS/04_useEffect%20%26%20Fetching%20External%20APIs)
+[ReactJS Template using Vite](https://github.com/narmstro2020/react-template)
