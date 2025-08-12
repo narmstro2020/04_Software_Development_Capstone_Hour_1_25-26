@@ -1,9 +1,9 @@
 ---
-## Capstone Hour 01 Semester 02 - Day 04 & 05 Lesson Plan
+## Capstone Hour 01 Semester 02 - Day 04 & 05_Project #5 Build Day Lesson Plan
 
 ### Unit: Modern JavaScript - ES6+ Features
 **Topic:** ES6+ Part 02: Ternary, Arrays & Objects, `map`, `filter`, `reduce`, Shorthand Properties  
-**Lesson Block:** Day 04 (WARRI) + Day 05 (OR)  
+**Lesson Block:** Day 04 (WARRI) + Day 05_Project #5 Build Day (OR)  
 **Project:** Mini Analytics Dashboard (map/reduce on static array data)  
 **Duration:** 86 minutes per day
 
