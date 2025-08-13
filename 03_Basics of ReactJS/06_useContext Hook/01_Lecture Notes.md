@@ -21,7 +21,10 @@ By the end of this lesson, students will:
 ```jsx
 import { createContext } from 'react';
 
-export const ThemeContext = createContext();
+export const ThemeContext = createContext({
+  theme: 'light',
+  toggleTheme: () => {},
+});
 ```
 
 ---
@@ -65,7 +68,11 @@ function Toolbar() {
 ```jsx
 import { createContext, useContext, useState } from 'react';
 
-const ThemeContext = createContext();
+
+const ThemeContext = createContext({
+  theme: 'light',
+  toggleTheme: () => {},
+});
 
 function ThemeProvider({ children }) {
   const [theme, setTheme] = useState('light');
