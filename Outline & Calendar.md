@@ -29,21 +29,21 @@
 |   4    | Introduction to Supabase (PostgreSQL) |    2     |                             Project #12 Build Day                              | Wed, Sep 3, 2025  |         -         |   Wed, Sep 10, 2025   |  25   |
 |   4    | Introduction to Supabase (PostgreSQL) |    3     |                     Supabase with Auth (Sign Up / Log In)                      |         -         | Thu, Sep 4, 2025  |           -           |  26   |
 |   4    | Introduction to Supabase (PostgreSQL) |    4     |                             Project #13 Build Day                              | Fri, Sep 5, 2025  |         -         |   Fri, Sep 12, 2025   |  27   |
-|        |       Advanced Web Development        |    1     |                    SCSS / SASS: Nesting, Variables, Mixins                     |         -         | Mon, Sep 8, 2025  |           -           |  28   |
-|        |       Advanced Web Development        |    2     |                             Project #14 Build Day                              | Tue, Sep 9, 2025  |         -         |   Tue, Sep 16, 2025   |  29   |
-|        |       Advanced Web Development        |    3     |                         TypeScript Basics in React.js                          |         -         | Wed, Sep 10, 2025 |           -           |  30   |
-|        |       Advanced Web Development        |    4     |                             Project #15 Build Day                              | Thu, Sep 11, 2025 |         -         |   Thu, Sep 18, 2025   |  31   |
-|        |           Advanced React.js           |    1     |                      React Router DOM & Multi-Page Views                       |         -         | Fri, Sep 12, 2025 |           -           |  32   |
-|        |           Advanced React.js           |    2     |                             Project #16 Build Day                              | Mon, Sep 15, 2025 |         -         |   Mon, Sep 22, 2025   |  33   |
-|        |           Advanced React.js           |    3     |    React Component Patterns: Container, Presentational, List-Item Patterns     |         -         | Tue, Sep 16, 2025 |           -           |  34   |
-|        |           Advanced React.js           |    4     |                          Preparation for Last Project                          | Wed, Sep 17, 2025 |         -         |   Thu, Oct 2, 2025    |  35   |
-|        |             Extra Topics              |    1     | JavaScript Frame Intro (Next.js), Intro to React Native, Project Clarification |         -         | Thu, Sep 18, 2025 |           -           |  36   |
-|        |             FINAL PROJECT             |    1     |                            Final Project Work Time                             | Fri, Sep 19, 2025 |         -         |   Thu, Oct 2, 2025    |  37   |
-|        |             FINAL PROJECT             |    2     |                            Final Project Work Time                             |         -         | Mon, Sep 22, 2025 |   Thu, Oct 2, 2025    |  38   |
-|        |             FINAL PROJECT             |    3     |                            Final Project Work Time                             | Tue, Sep 23, 2025 |         -         |   Thu, Oct 2, 2025    |  39   |
-|        |             FINAL PROJECT             |    4     |                            Final Project Work Time                             |         -         | Wed, Sep 24, 2025 |   Thu, Oct 2, 2025    |  40   |
-|        |             FINAL PROJECT             |    5     |                            Final Project Work Time                             | Thu, Sep 25, 2025 |         -         |   Thu, Oct 2, 2025    |  41   |
-|        |             FINAL PROJECT             |    6     |                              Submit Final Project                              |         -         | Fri, Sep 26, 2025 |   Thu, Oct 2, 2025    |  42   |
+|   5    |       Advanced Web Development        |    1     |                    SCSS / SASS: Nesting, Variables, Mixins                     |         -         | Mon, Sep 8, 2025  |           -           |  28   |
+|   5    |       Advanced Web Development        |    2     |                             Project #14 Build Day                              | Tue, Sep 9, 2025  |         -         |   Tue, Sep 16, 2025   |  29   |
+|   5    |       Advanced Web Development        |    3     |                         TypeScript Basics in React.js                          |         -         | Wed, Sep 10, 2025 |           -           |  30   |
+|   5    |       Advanced Web Development        |    4     |                             Project #15 Build Day                              | Thu, Sep 11, 2025 |         -         |   Thu, Sep 18, 2025   |  31   |
+|   6    |           Advanced React.js           |    1     |                      React Router DOM & Multi-Page Views                       |         -         | Fri, Sep 12, 2025 |           -           |  32   |
+|   6    |           Advanced React.js           |    2     |                             Project #16 Build Day                              | Mon, Sep 15, 2025 |         -         |   Mon, Sep 22, 2025   |  33   |
+|   6    |           Advanced React.js           |    3     |    React Component Patterns: Container, Presentational, List-Item Patterns     |         -         | Tue, Sep 16, 2025 |           -           |  34   |
+|   6    |           Advanced React.js           |    4     |                          Preparation for Last Project                          | Wed, Sep 17, 2025 |         -         |   Thu, Oct 2, 2025    |  35   |
+|   7    |             Extra Topics              |    1     | JavaScript Frame Intro (Next.js), Intro to React Native, Project Clarification |         -         | Thu, Sep 18, 2025 |           -           |  36   |
+|   8    |             FINAL PROJECT             |    1     |                            Final Project Work Time                             | Fri, Sep 19, 2025 |         -         |   Thu, Oct 2, 2025    |  37   |
+|   8    |             FINAL PROJECT             |    2     |                            Final Project Work Time                             |         -         | Mon, Sep 22, 2025 |   Thu, Oct 2, 2025    |  38   |
+|   8    |             FINAL PROJECT             |    3     |                            Final Project Work Time                             | Tue, Sep 23, 2025 |         -         |   Thu, Oct 2, 2025    |  39   |
+|   8    |             FINAL PROJECT             |    4     |                            Final Project Work Time                             |         -         | Wed, Sep 24, 2025 |   Thu, Oct 2, 2025    |  40   |
+|   8    |             FINAL PROJECT             |    5     |                            Final Project Work Time                             | Thu, Sep 25, 2025 |         -         |   Thu, Oct 2, 2025    |  41   |
+|   8    |             FINAL PROJECT             |    6     |                              Submit Final Project                              |         -         | Fri, Sep 26, 2025 |   Thu, Oct 2, 2025    |  42   |
 
 
 
