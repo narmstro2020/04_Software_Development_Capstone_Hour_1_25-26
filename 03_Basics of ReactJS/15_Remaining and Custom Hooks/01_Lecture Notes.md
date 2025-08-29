@@ -21,9 +21,8 @@
   - [2.2 Creating Custom Hooks](#22-creating-custom-hooks)
   - [2.3 Custom Hook Examples](#23-custom-hook-examples)
   - [2.4 Best Practices](#24-best-practices)
-- [3. Coding Assignments](#3-coding-assignments)
-- [4. Summary](#4-summary)
-- [5. Additional Resources](#5-additional-resources)
+- [3. Summary](#4-summary)
+- [4. Additional Resources](#5-additional-resources)
 
 ---
 
