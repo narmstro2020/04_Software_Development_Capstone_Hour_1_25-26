@@ -1,0 +1,136 @@
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">Custom Hooks Best Practices Flow</text>
+  
+  <!-- Start -->
+  <ellipse cx="400" cy="70" rx="80" ry="25" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+  <text x="400" y="77" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Start Creating Hook</text>
+  
+  <!-- Step 1: Naming -->
+  <rect x="320" y="120" width="160" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1976d2">1. Name starts with "use"?</text>
+  <text x="400" y="155" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1976d2">e.g., useCounter, useFetch</text>
+  
+  <!-- Decision Diamond -->
+  <polygon points="400,190 440,210 400,230 360,210" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="400" y="215" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f57c00">Valid?</text>
+  
+  <!-- No Path -->
+  <rect x="500" y="185" width="120" height="50" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="5"/>
+  <text x="560" y="205" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f44336">❌ Fix naming</text>
+  <text x="560" y="220" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#f44336">Must start with "use"</text>
+  
+  <!-- Arrow back from No -->
+  <path d="M 500 210 Q 480 210 480 180 Q 480 150 400 150" fill="none" stroke="#f44336" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Single Responsibility -->
+  <rect x="320" y="270" width="160" height="50" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#2e7d32">2. Single Responsibility</text>
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2e7d32">One clear purpose</text>
+  
+  <!-- Step 3: Use Other Hooks -->
+  <rect x="320" y="350" width="160" height="50" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5"/>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#7b1fa2">3. Use Built-in Hooks</text>
+  <text x="400" y="385" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#7b1fa2">useState, useEffect, etc.</text>
+  
+  <!-- Step 4: Return Pattern -->
+  <rect x="320" y="430" width="160" height="50" fill="#fff8e1" stroke="#fbc02d" stroke-width="2" rx="5"/>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#f57f17">4. Return Values</text>
+  <text x="400" y="465" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f57f17">Object or Array</text>
+  
+  <!-- Return Pattern Decision -->
+  <polygon points="400,500 450,520 400,540 350,520" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="400" y="525" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f57c00">Multiple values?</text>
+  
+  <!-- Array Pattern -->
+  <rect x="200" y="560" width="120" height="50" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="260" y="580" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2e7d32">Array Pattern</text>
+  <text x="260" y="595" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#2e7d32">[value, setValue]</text>
+  
+  <!-- Object Pattern -->
+  <rect x="480" y="560" width="120" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="540" y="580" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#1976d2">Object Pattern</text>
+  <text x="540" y="595" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1976d2">{data, loading, error}</text>
+  
+  <!-- Step 5: Error Handling -->
+  <rect x="320" y="640" width="160" height="50" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="5"/>
+  <text x="400" y="660" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#c62828">5. Error Handling</text>
+  <text x="400" y="675" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c62828">Try-catch blocks</text>
+  
+  <!-- Side Examples -->
+  <rect x="50" y="120" width="200" height="120" fill="#f5f5f5" stroke="#9e9e9e" stroke-width="1" rx="5"/>
+  <text x="60" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#424242">✅ Good Examples:</text>
+  <text x="60" y="160" font-family="Arial, sans-serif" font-size="10" fill="#424242">• useCounter</text>
+  <text x="60" y="175" font-family="Arial, sans-serif" font-size="10" fill="#424242">• useLocalStorage</text>
+  <text x="60" y="190" font-family="Arial, sans-serif" font-size="10" fill="#424242">• useFetch</text>
+  <text x="60" y="205" font-family="Arial, sans-serif" font-size="10" fill="#424242">• useToggle</text>
+  <text x="60" y="220" font-family="Arial, sans-serif" font-size="10" fill="#424242">• useDebounce</text>
+  
+  <rect x="550" y="120" width="200" height="120" fill="#ffebee" stroke="#f44336" stroke-width="1" rx="5"/>
+  <text x="560" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c62828">❌ Bad Examples:</text>
+  <text x="560" y="160" font-family="Arial, sans-serif" font-size="10" fill="#c62828">• counter (missing "use")</text>
+  <text x="560" y="175" font-family="Arial, sans-serif" font-size="10" fill="#c62828">• useEverything</text>
+  <text x="560" y="190" font-family="Arial, sans-serif" font-size="10" fill="#c62828">• useAppLogic</text>
+  <text x="560" y="205" font-family="Arial, sans-serif" font-size="10" fill="#c62828">• useMultiplePurposes</text>
+  
+  <!-- Code Examples -->
+  <rect x="50" y="280" width="200" height="180" fill="#f0f8ff" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="60" y="300" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976d2">Hook Structure:</text>
+  <text x="60" y="320" font-family="Courier, monospace" font-size="9" fill="#1976d2">function useCustomHook() {</text>
+  <text x="60" y="335" font-family="Courier, monospace" font-size="9" fill="#1976d2">  const [state, setState] =</text>
+  <text x="60" y="350" font-family="Courier, monospace" font-size="9" fill="#1976d2">    useState(initial);</text>
+  <text x="60" y="365" font-family="Courier, monospace" font-size="9" fill="#1976d2">  </text>
+  <text x="60" y="380" font-family="Courier, monospace" font-size="9" fill="#1976d2">  useEffect(() => {</text>
+  <text x="60" y="395" font-family="Courier, monospace" font-size="9" fill="#1976d2">    // side effects</text>
+  <text x="60" y="410" font-family="Courier, monospace" font-size="9" fill="#1976d2">  }, [deps]);</text>
+  <text x="60" y="425" font-family="Courier, monospace" font-size="9" fill="#1976d2">  </text>
+  <text x="60" y="440" font-family="Courier, monospace" font-size="9" fill="#1976d2">  return { state, actions };</text>
+  <text x="60" y="455" font-family="Courier, monospace" font-size="9" fill="#1976d2">}</text>
+  
+  <!-- Return Pattern Examples -->
+  <rect x="550" y="480" width="200" height="150" fill="#fff8e1" stroke="#fbc02d" stroke-width="1" rx="5"/>
+  <text x="560" y="500" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f57f17">Return Patterns:</text>
+  <text x="560" y="520" font-family="Courier, monospace" font-size="9" fill="#f57f17">// Array (2 values)</text>
+  <text x="560" y="535" font-family="Courier, monospace" font-size="9" fill="#f57f17">return [value, setValue];</text>
+  <text x="560" y="555" font-family="Courier, monospace" font-size="9" fill="#f57f17">// Object (3+ values)</text>
+  <text x="560" y="570" font-family="Courier, monospace" font-size="9" fill="#f57f17">return {</text>
+  <text x="560" y="585" font-family="Courier, monospace" font-size="9" fill="#f57f17">  data,</text>
+  <text x="560" y="600" font-family="Courier, monospace" font-size="9" fill="#f57f17">  loading,</text>
+  <text x="560" y="615" font-family="Courier, monospace" font-size="9" fill="#f57f17">  error,</text>
+  <text x="560" y="630" font-family="Courier, monospace" font-size="9" fill="#f57f17">};</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Main flow arrows -->
+  <line x1="400" y1="95" x2="400" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="170" x2="400" y2="190" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="230" x2="400" y2="270" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="320" x2="400" y2="350" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="400" x2="400" y2="430" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="480" x2="400" y2="500" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decision arrows -->
+  <line x1="440" y1="210" x2="500" y2="210" stroke="#f44336" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="470" y="205" font-family="Arial, sans-serif" font-size="10" fill="#f44336">No</text>
+  
+  <text x="415" y="245" font-family="Arial, sans-serif" font-size="10" fill="#4caf50">Yes</text>
+  
+  <!-- Return pattern arrows -->
+  <line x1="370" y1="530" x2="320" y2="585" stroke="#4caf50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="330" y="550" font-family="Arial, sans-serif" font-size="9" fill="#4caf50">≤2 values</text>
+  
+  <line x1="430" y1="530" x2="480" y2="585" stroke="#1976d2" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="450" y="550" font-family="Arial, sans-serif" font-size="9" fill="#1976d2">3+ values</text>
+  
+  <!-- Convergence arrows -->
+  <line x1="320" y1="585" x2="400" y2="640" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="480" y1="585" x2="400" y2="640" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>

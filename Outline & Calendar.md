@@ -26,7 +26,7 @@
 |   3    |          Basics of React.js           |    13    |                            useCallback and useMemo                             |         -         | Wed, Aug 27, 2025 |           -           |  22   |
 |   3    |          Basics of React.js           |    14    |                             Project #10 Build Day                              | Thu, Aug 28, 2025 |         -         |   Tue, Sep 2, 2025    |  23   |
 |   3    |          Basics of React.js           |    15    |                           Remaining and Custom Hooks                           |         -         | Fri, Aug 29, 2025 |           -           |  24   |
-|   3    |          Basics of React.js           |    16    |                             Project #11 Build Day                              | Wed, Sep 3, 2025  |         -         |   Thu, Sep 4, 2025    |  25   |
+|   3    |          Basics of React.js           |    16    |                                   Work Time                                    | Wed, Sep 3, 2025  |         -         |   Thu, Sep 4, 2025    |  25   |
 |   4    | Introduction to Supabase (PostgreSQL) |    1     |            Supabase Setup, Basic Features, Auth (Sign Up / Log In)             |         -         | Thu, Sep 4, 2025  |           -           |  26   |
 |   4    | Introduction to Supabase (PostgreSQL) |    2     |                             Project #12 Build Day                              | Fri, Sep 5, 2025  |         -         |   Fri, Sep 12, 2025   |  27   |
 |        |       Advanced Web Development        |    1     |                    SCSS / SASS: Nesting, Variables, Mixins                     |         -         | Mon, Sep 8, 2025  |           -           |  28   |
