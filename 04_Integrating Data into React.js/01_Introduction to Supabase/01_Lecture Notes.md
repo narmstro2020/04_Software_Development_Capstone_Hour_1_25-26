@@ -9,9 +9,8 @@
 2. [Creating a React.js Project with Supabase Integration](#2-creating-a-reactjs-project-with-supabase-integration)
 3. [Vocabulary](#vocabulary)
 4. [Code Examples](#code-examples)
-5. [Assignments](#assignments)
-6. [Summary](#summary)
-7. [Additional Resources](#additional-resources)
+5. [Summary](#summary)
+6. [Additional Resources](#additional-resources)
 
 ---
 
@@ -510,20 +509,6 @@ export function useTodos() {
   }
 }
 ```
-
----
-
-## Assignments
-[↑ Back to Top](#supabase-introduction-and-reactjs-integration)
-
-### Assignment 1: Basic Todo App
-**File:** [Assignment 1 - Basic Todo App](assignment-1-basic-todo.md)
-
-### Assignment 2: Todo App with Categories
-**File:** [Assignment 2 - Todo Categories](assignment-2-todo-categories.md)
-
-### Assignment 3: Real-time Todo Collaboration
-**File:** [Assignment 3 - Real-time Collaboration](assignment-3-realtime-todos.md)
 
 ---
 
