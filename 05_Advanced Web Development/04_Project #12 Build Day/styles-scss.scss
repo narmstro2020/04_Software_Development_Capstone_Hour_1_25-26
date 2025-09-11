@@ -1,0 +1,474 @@
+/* 
+==========================================================
+SCSS ASSIGNMENT - Task Manager Styles
+Complete the TODOs below to learn SCSS concepts
+==========================================================
+*/
+
+/* 
+TODO 1: SCSS Variables - Complete the color system below
+Add missing color variables for semantic colors
+*/
+:root {
+    // Primary brand colors
+    --primary-color: #2563eb;
+    --secondary-color: #64748b;
+    
+    // TODO: Add success-color (green shade)
+    // --success-color: ;
+    
+    // TODO: Add danger-color (red shade)  
+    // --danger-color: ;
+    
+    // TODO: Add warning-color (orange/yellow shade)
+    // --warning-color: ;
+    
+    // Background colors
+    --background-color: #f8fafc;
+    --card-background: #ffffff;
+    
+    // Text colors
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    
+    // UI elements
+    --border-color: #e2e8f0;
+    --border-radius: 8px;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* 
+TODO 2: SCSS Mixins - Create reusable mixins for common patterns
+Complete the mixins below for buttons and layout
+*/
+
+// Mixin for centering content with flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// TODO: Complete the button base mixin
+@mixin btn-base {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    
+    // TODO: Add transition for smooth hover effects
+    // transition: ;
+}
+
+// TODO: Create a mixin for hover effects
+@mixin btn-hover {
+    // TODO: Add transform and box-shadow for hover state
+    // transform: ;
+    // box-shadow: ;
+}
+
+/* 
+==========================================================
+BASE STYLES & RESET
+==========================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* 
+==========================================================
+LAYOUT COMPONENTS
+==========================================================
+*/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+    
+    p {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+    }
+}
+
+/* 
+==========================================================
+FORM COMPONENTS
+==========================================================
+*/
+
+.task-form {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+    
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 2px solid var(--border-color);
+        border-radius: var(--border-radius);
+        font-size: 1rem;
+        transition: border-color 0.2s ease;
+    }
+    
+    /* 
+    TODO 3: SCSS Focus States - Add focus styles for form elements
+    When focused, inputs should have the primary color border
+    */
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        // TODO: Add border-color change to primary color on focus
+        // border-color: ;
+    }
+    
+    textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* 
+TODO 4: SCSS Button Components - Complete the button system
+Create button variants using SCSS features and the color variables
+*/
+
+// Base button class using mixin
+button {
+    @include btn-base;
+}
+
+// TODO: Complete primary button styles
+.btn-primary {
+    // TODO: Add background-color using primary color variable
+    // background-color: ;
+    color: white;
+    
+    &:hover {
+        // TODO: Add darker primary color for hover
+        // background-color: ;
+        @include btn-hover;
+    }
+}
+
+// TODO: Complete success button styles  
+.btn-success {
+    // TODO: Add background-color using success color variable
+    // background-color: ;
+    color: white;
+    
+    &:hover {
+        // TODO: Add darker success color for hover
+        // background-color: ;
+    }
+}
+
+// TODO: Complete danger button styles
+.btn-danger {
+    // TODO: Add background-color using danger color variable  
+    // background-color: ;
+    color: white;
+    
+    &:hover {
+        // TODO: Add darker danger color for hover
+        // background-color: ;
+    }
+}
+
+// TODO: Complete warning button styles
+.btn-warning {
+    // TODO: Add background-color using warning color variable
+    // background-color: ;
+    color: white;
+    
+    &:hover {
+        // TODO: Add darker warning color for hover
+        // background-color: ;
+    }
+}
+
+/* 
+==========================================================
+TASK LIST COMPONENTS
+==========================================================
+*/
+
+.task-list {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.task-list-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.tasks-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.task-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+        background-color: #f1f5f9;
+    }
+    
+    &:last-child {
+        border-bottom: none;
+    }
+    
+    /* 
+    TODO 5: SCSS Completed Task Styles - Style completed tasks
+    Completed tasks should have reduced opacity and different background
+    */
+    &.completed {
+        // TODO: Add opacity and background-color for completed tasks
+        // opacity: ;
+        // background-color: ;
+        
+        .task-title {
+            // TODO: Add text-decoration: line-through for completed tasks
+            // text-decoration: ;
+            color: var(--text-secondary);
+        }
+    }
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.task-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.task-priority {
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    &.high {
+        background-color: #fef2f2;
+        // TODO: Use danger color variable for high priority
+        // color: ;
+    }
+    
+    &.medium {
+        background-color: #fffbeb;
+        // TODO: Use warning color variable for medium priority
+        // color: ;
+    }
+    
+    &.low {
+        background-color: #f0f9ff;
+        color: var(--primary-color);
+    }
+}
+
+.task-description {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.task-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.task-actions {
+    display: flex;
+    gap: 0.5rem;
+    
+    button {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* 
+==========================================================
+STATISTICS COMPONENTS  
+==========================================================
+*/
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* 
+==========================================================
+EMPTY STATE
+==========================================================
+*/
+
+.empty-state {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    color: var(--text-secondary);
+    
+    h3 {
+        margin-bottom: 0.5rem;
+        color: var(--text-primary);
+    }
+}
+
+/* 
+TODO 6: SCSS Responsive Design - Add mobile-responsive styles
+Complete the media query below for screens smaller than 768px
+Use SCSS nesting to organize the responsive styles
+*/
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .header {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    
+    // TODO: Make form actions stack vertically on mobile
+    .form-actions {
+        // TODO: Add flex-direction: column
+        // flex-direction: ;
+    }
+    
+    // TODO: Make task headers stack vertically on mobile  
+    .task-header {
+        // TODO: Add flex-direction: column and gap
+        // flex-direction: ;
+        // gap: ;
+        align-items: flex-start;
+    }
+    
+    .task-actions {
+        flex-wrap: wrap;
+    }
+}
+
+/* 
+==========================================================
+SCSS ASSIGNMENT COMPLETION CHECKLIST:
+==========================================================
+
+CSS/SCSS (6 TODOs):
+□ TODO 1: Add missing CSS color variables (success, danger, warning)
+□ TODO 2: Complete button base mixin with transitions  
+□ TODO 3: Add focus styles for form elements
+□ TODO 4: Create button color variants using variables
+□ TODO 5: Style completed tasks with opacity and strikethrough
+□ TODO 6: Add responsive design for mobile devices
+
+SCSS CONCEPTS COVERED:
+- Variables and color systems
+- Mixins for reusable styles
+- Nesting for organized CSS
+- Pseudo-classes and states (&:hover, &:focus)
+- Responsive design with media queries
+- Component-based architecture
+- CSS custom properties integration
+
+COMPILE INSTRUCTIONS:
+To compile this SCSS to CSS, use:
+- Sass CLI: sass styles.scss styles.css
+- VS Code Live Sass Compiler extension
+- Build tools like Webpack, Vite, or Parcel
+- Online SCSS compilers for testing
+
+==========================================================
+*/
